@@ -1,0 +1,30 @@
+.description {
+  @extend %reset-list;
+  @include justFlex(flex);
+
+   gap: 30px;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ 
+ .description__box {
+  @include justFlex(flex);
+
+   max-width: 270px;
+   flex-direction: column;
+   flex-wrap: nowrap;
+ }
+ 
+ .description__title--bottom {
+  @include justFlex(flex);
+  @include fonts(14px, 16px, 700);
+
+   margin-bottom: 10px;
+   text-transform: uppercase;
+ }
+ 
+ .description__text {
+  @include fonts(14px, 24px);
+
+   color: var(--grey-txt-cl);
+ }

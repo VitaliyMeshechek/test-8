@@ -1,0 +1,22 @@
+.benefits {
+   padding-top: 94px;
+   padding-bottom: 94px;
+ 
+   background-color: var(--additional-bg-cl);
+ }
+
+ .benefits__list {
+  @extend %reset-list;
+  @include centeredFlex(flex); 
+  
+   gap: 30px;
+   margin: 0;
+ }
+ 
+ .benefits__item {
+  @include justFlex(flex);
+  
+   padding: 25px 100px;
+   background-color: var(--grey-bg-additional-cl);
+   margin-bottom: 30px;
+ }

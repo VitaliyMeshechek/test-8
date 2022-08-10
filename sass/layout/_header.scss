@@ -1,0 +1,27 @@
+.header {
+   padding-top: 24px;
+   padding-bottom: 24px;
+ 
+   background-color: var(--additional-bg-cl);
+   border: 1px solid #ececec;
+ }
+ 
+ .header-container {
+  @include centeredFlex(flex);
+ }
+
+ .header-link-current {
+   position: relative;
+   color: var(--additional-txt-cl);
+ }
+ 
+ .header-link-current::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   left: 0;
+   top: 46px;
+   background-color: var(--blue-bg-cl);
+   border-radius: 2px;
+ }
